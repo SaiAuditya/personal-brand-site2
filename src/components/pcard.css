@@ -1,0 +1,90 @@
+.project-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px; /* Ensures consistent sizing */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-body {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-body ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.card-body ul li i {
+  margin-right: 10px;
+  color: #0077cc;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .project-card {
+      width: 90%; /* Make cards take more space on small screens */
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+      padding: 15px;
+      margin: 10px;
+  }
+
+  .card-header h3 {
+      font-size: 16px;
+  }
+
+  .card-body {
+      font-size: 13px;
+  }
+
+  .card-body ul li {
+      font-size: 13px;
+  }
+}

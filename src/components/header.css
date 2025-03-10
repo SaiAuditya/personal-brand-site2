@@ -1,0 +1,103 @@
+/* Header Styles */
+.header {
+  background-color: #C2F0FF; 
+  color: black;
+  padding: 12px 20px; /* Reduced padding for better mobile fit */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Ensures menu positioning works */
+}
+
+/* Container to maintain max width */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Logo Styles */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: flex;
+  gap: 24px;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0077cc;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Hidden by default on desktops */
+}
+
+.menu-icon {
+  width: 28px;
+  height: 28px;
+  stroke: black;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  background-color: #FFE4C4;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Nav Links */
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.mobile-nav .nav-link {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  /* Show menu button */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide desktop navigation */
+  .desktop-nav {
+    display: none;
+  }
+
+  /* Display mobile nav when active */
+  .mobile-nav.active {
+    display: flex;
+  }
+}

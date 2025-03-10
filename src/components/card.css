@@ -1,0 +1,89 @@
+.resume-card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+  padding: 10px;
+}
+
+.resume-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  max-width: 90%;  /* Responsive width */
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0077cc;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-body ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.icon-header {
+  font-size: 24px; 
+  color: #0077cc;
+  margin-right: 8px;
+}
+
+.icon-bullet {
+  font-size: 16px;
+  color: #0077cc;
+  flex-shrink: 0; 
+}
+
+.card-body ul li span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Change color on hover */
+.resume-card:hover .icon-header, 
+.resume-card:hover .icon-bullet {
+  color: #0056a6; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) { 
+  .resume-card {
+    padding: 12px;
+    max-width: 100%;  /* Better fit for small screens */
+  }
+
+  .card-header {
+    font-size: 16px;  /* Reduce font size slightly */
+  }
+
+  .icon-header {
+    font-size: 20px;  
+  }
+
+  .icon-bullet {
+    font-size: 14px;
+  }
+
+  .card-body ul li span {
+    font-size: 13px;
+  }
+}

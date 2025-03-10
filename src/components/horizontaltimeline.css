@@ -1,0 +1,111 @@
+.container-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #BAE1FF;
+}
+.margin-horizontal {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.steelblue-box {
+    width: 105px;
+    height: 40px;
+    background: steelblue;
+    align-content: center;
+    text-align: center;
+}
+
+.centered-box {
+    width: 100px;
+    height: 40px;
+    background: #BAFFC9;
+    display: flex; /* Required for justify-content and align-content to work */
+    justify-content: center;
+    align-content: center;
+}
+
+.centered-text {
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.grey-box-2 {
+    width: 100px;
+    height: 40px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .grey-box-3 {
+    width: 100px;
+    height: 60px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .grey-box-4 {
+    width: 100px;
+    height: 40px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Hover effects */
+  .grey-box-2:hover {
+    background: #4CAF50; /* Green for hover */
+    color: white;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .grey-box-3:hover {
+    background: #FF9800; /* Orange for hover */
+    color: white;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .grey-box-4:hover {
+    background: #2196F3; /* Blue for hover */
+    color: white;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .bold-white-text {
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .grey-box-2:hover .bold-white-text,
+  .grey-box-3:hover .bold-white-text,
+  .grey-box-4:hover .bold-white-text {
+    color: white;
+  }
+  
+

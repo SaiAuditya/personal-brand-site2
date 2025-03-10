@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Ensures everything stays centered */
+  justify-content: left;
+  min-height: 100vh;
+  padding: 10px; /* Adds some padding for smaller screens */
+  max-width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  max-width: 100%; /* Ensures it doesn’t overflow on smaller screens */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+  padding: 20px; /* Prevents content from sticking to the edges */
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+  font-size: 1.2em; /* Ensures links are readable */
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #fff; /* Adds a hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 18px; /* Adjust text size for tablets */
+    padding: 15px;
+  }
+
+  .App-logo {
+    height: 30vmin
+  }
+}
